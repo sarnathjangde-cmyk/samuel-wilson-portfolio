@@ -33,32 +33,32 @@ function loadData() {
         chats = JSON.parse(savedChats);
     }
     
-    // पोस्टर्स लोड करें (डेमो डेटा)
+    // पोस्टर्स लोड करें
     loadDemoPosters();
 }
 
-// डेमो पोस्टर्स लोड करें
+// डेमो पोस्टर्स लोड करें - यहाँ अपने image paths डालो
 function loadDemoPosters() {
     // ग्राफिक डिजाइन पोस्टर्स
     posters.graphicDesign = [
         {
             id: 1,
-            title: "Creative graphic design",
-            image: "images/graphic-design/poster1.jpg",
-            likes: 12000,
+            title: "ग्राफिक डिजाइन 1",
+            image: "images/graphic-design/poster1.jpg",  // ← यहाँ अपना path डालो
+            likes: 45000,
             category: "graphic"
         },
         {
             id: 2,
-            title: "graphic design",
-            image: "images/graphic-design/poster2.jpg",
-            likes: 10000,
+            title: "ग्राफिक डिजाइन 2",
+            image: "images/graphic-design/poster2.jpg",  // ← यहाँ अपना path डालो
+            likes: 32000,
             category: "graphic"
         },
         {
             id: 3,
-            title: "logos Design",
-            image: "images/graphic-design/poster3.jpg",
+            title: "ग्राफिक डिजाइन 3",
+            image: "images/graphic-design/poster3.jpg",  // ← यहाँ अपना path डालो
             likes: 28000,
             category: "graphic"
         }
@@ -68,23 +68,23 @@ function loadDemoPosters() {
     posters.webDesign = [
         {
             id: 101,
-            title: "E-commerce Website",
-            image: "images/web-design/website1.jpg",
-            likes: 20000,
+            title: "वेब डिजाइन 1",
+            image: "images/web-design/website1.jpg",  // ← यहाँ अपना path डालो
+            likes: 67000,
             category: "web"
         },
         {
             id: 102,
-            title: "Portfolio Website",
-            image: "https://via.placeholder.com/300x250/45b7d1/ffffff?text=Web+Design+2",
-            likes: 54,
+            title: "वेब डिजाइन 2",
+            image: "images/web-design/website2.jpg",  // ← यहाँ अपना path डालो
+            likes: 54000,
             category: "web"
         },
         {
             id: 103,
-            title: "Business Website",
-            image: "https://via.placeholder.com/300x250/96ceb4/ffffff?text=Web+Design+3",
-            likes: 41,
+            title: "वेब डिजाइन 3",
+            image: "images/web-design/website3.jpg",  // ← यहाँ अपना path डालो
+            likes: 41000,
             category: "web"
         }
     ];
@@ -516,6 +516,4 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
-
 });
-
