@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Wilson - Graphic & Web Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- लोडिंग एनिमेशन -->
+    <div class="loader">
+        <div class="loader-text">SAMUEL WILSON</div>
+        <div class="loader-subtext">Graphic & Web Designer</div>
+    </div>
+
+    <!-- मुख्य वेबसाइट -->
+    <div class="website-content" style="display: none;">
+        <!-- नेविगेशन बार -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>SW</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#join">connect with us</a></li>
+                    <li class="profile-icon">
+                        <a href="#" id="profileBtn">
+                            <i class="fas fa-user-circle"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="chat-support">
+                    <a href="#" id="supportChatBtn">
+                        <i class="fas fa-headset"></i>
+                        <span>Support</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- होम सेक्शन एनिमेशन -->
+        <section id="home" class="hero-section">
+            <div class="hero-content animate-hero">
+                <h1 class="hero-title">SAMUEL WILSON</h1>
+                <h2 class="hero-subtitle">Graphic & Web Designer</h2>
+                <div class="hero-cta">
+                    <a href="#products" class="btn primary-btn">my projects</a>
+                    <a href="#join" class="btn secondary-btn">Book Now</a>
+                </div>
+            </div>
+            <div class="hero-background">
+                <div class="shape shape1"></div>
+                <div class="shape shape2"></div>
+                <div class="shape shape3"></div>
+            </div>
+        </section>
+
+        <!-- प्रोडक्ट्स सेक्शन (पोस्टर्स) -->
+        <section id="products" class="products-section">
+            <div class="container">
+                <h2 class="section-title">My designs</h2>
+                
+                <!-- ग्राफिक डिजाइनिंग पोस्टर्स -->
+                <div class="category">
+                    <h3 class="category-title">Graphic Designing</h3>
+                    <div class="posters-grid" id="graphicDesigns">
+                        <!-- JavaScript से पोस्टर्स लोड होंगे -->
+                    </div>
+                </div>
+
+                <!-- वेब डिजाइनिंग पोस्टर्स -->
+                <div class="category">
+                    <h3 class="category-title">Web Designing</h3>
+                    <div class="posters-grid" id="webDesigns">
+                        <!-- JavaScript से पोस्टर्स लोड होंगे -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ज्वाइन सेक्शन (कस्टमर बनने के लिए) -->
+        <section id="join" class="join-section">
+            <div class="container">
+                <h2 class="section-title">connect with us</h2>
+                <div class="join-content">
+                    <div class="join-info">
+                        <h3>कस्टमर बनें और पाएं खास ऑफर्स</h3>
+                        <p>नए डिजाइन अपडेट्स और खास डिस्काउंट के लिए अभी जुड़ें</p>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check-circle"></i> फ्री कंसल्टेशन</li>
+                            <li><i class="fas fa-check-circle"></i> 20% डिस्काउंट पहले प्रोजेक्ट पर</li>
+                            <li><i class="fas fa-check-circle"></i> प्रायोरिटी सपोर्ट</li>
+                        </ul>
+                    </div>
+                    <div class="join-form">
+                        <form id="joinForm">
+                            <input type="text" placeholder="आपका नाम" required>
+                            <input type="email" placeholder="ईमेल" required>
+                            <input type="tel" placeholder="फोन नंबर">
+                            <button type="submit" class="btn primary-btn">Join Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- फुटर (कॉन्टैक्ट इन्फॉर्मेशन) -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3>SAMUEL WILSON</h3>
+                        <p>Graphic & Web Designer</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="mailto:jangdelaxmi10@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>samuelsilson.com</span>
+                        </a>
+                        <a href="https://instagram.com/samuelwilson_999" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>@samuelwilson</span>
+                        </a>
+                        <a href="https://wa.me/6267488659" target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+91 62*** ***59</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    &copy; 2024 Samuel Wilson. सभी अधिकार सुरक्षित।
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- लॉगिन मॉडल -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>लॉगिन / साइन अप</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>ईमेल या फोन नंबर</label>
+                    <input type="text" id="loginIdentifier" placeholder="ईमेल या फोन नंबर दर्ज करें" required>
+                </div>
+                <button type="submit" class="btn primary-btn">लॉगिन</button>
+                <p class="form-note">पहली बार? बस अपना ईमेल/फोन डालें और अकाउंट बन जाएगा</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- यूजर प्रोफाइल मॉडल -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content profile-modal">
+            <span class="close-profile">&times;</span>
+            <h2>मेरा प्रोफाइल</h2>
+            <div class="profile-tabs">
+                <button class="tab-btn active" data-tab="favorites">
+                    <i class="fas fa-heart"></i> पसंदीदा
+                </button>
+                <button class="tab-btn" data-tab="chat">
+                    <i class="fas fa-comment"></i> चैट
+                </button>
+            </div>
+            
+            <!-- पसंदीदा टैब -->
+            <div id="favoritesTab" class="tab-content active">
+                <div class="favorites-grid">
+                    <!-- पसंदीदा पोस्टर्स यहां दिखेंगे -->
+                </div>
+            </div>
+
+            <!-- चैट टैब -->
+            <div id="chatTab" class="tab-content">
+                <div class="chat-container">
+                    <div class="chat-messages" id="userChatMessages">
+                        <!-- चैट मैसेज यहां दिखेंगे -->
+                    </div>
+                    <div class="chat-input-area">
+                        <textarea id="userChatInput" placeholder="अपना मैसेज लिखें..."></textarea>
+                        <button id="sendUserChat" class="btn primary-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- सपोर्ट चैट मॉडल -->
+    <div id="supportChatModal" class="modal">
+        <div class="modal-content chat-modal">
+            <span class="close-support">&times;</span>
+            <h2>सपोर्ट चैट</h2>
+            <div class="chat-container">
+                <div class="chat-messages" id="supportChatMessages">
+                    <!-- चैट मैसेज यहां दिखेंगे -->
+                </div>
+                <div class="chat-input-area">
+                    <textarea id="supportChatInput" placeholder="अपना मैसेज लिखें..."></textarea>
+                    <button id="sendSupportChat" class="btn primary-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- एडमिन चैट पैनल (सिर्फ एडमिन के लिए) -->
+    <div id="adminChatPanel" class="admin-panel" style="display: none;">
+        <div class="admin-header">
+            <h3>एडमिन चैट पैनल</h3>
+            <button id="closeAdminPanel">&times;</button>
+        </div>
+        <div class="admin-chats">
+            <!-- यूजर्स की चैट यहां दिखेंगी -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
