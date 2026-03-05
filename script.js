@@ -43,23 +43,23 @@ function loadDemoPosters() {
     posters.graphicDesign = [
         {
             id: 1,
-            title: "Creative Brand Poster",
-            image: "https://via.placeholder.com/300x250/667eea/ffffff?text=Graphic+Design+1",
-            likes: 45,
+            title: "Creative graphic design",
+            image: "images/graphic-design/poster1.jpg",
+            likes: 12k +,
             category: "graphic"
         },
         {
             id: 2,
-            title: "Modern Art Poster",
-            image: "https://via.placeholder.com/300x250/764ba2/ffffff?text=Graphic+Design+2",
-            likes: 32,
+            title: "graphic design",
+            image: "images/graphic-design/poster2.jpg",
+            likes: 10k+,
             category: "graphic"
         },
         {
             id: 3,
-            title: "Minimal Design",
-            image: "https://via.placeholder.com/300x250/ff6b6b/ffffff?text=Graphic+Design+3",
-            likes: 28,
+            title: "logos Design",
+            image: "images/graphic-design/poster3.jpg",
+            likes: 28k+,
             category: "graphic"
         }
     ];
@@ -69,8 +69,8 @@ function loadDemoPosters() {
         {
             id: 101,
             title: "E-commerce Website",
-            image: "https://via.placeholder.com/300x250/4ecdc4/ffffff?text=Web+Design+1",
-            likes: 67,
+            image: "images/web-design/website1.jpg",
+            likes: 20k+,
             category: "web"
         },
         {
@@ -516,4 +516,5 @@ window.addEventListener('scroll', () => {
             link.classList.add('active');
         }
     });
+
 });
