@@ -44,7 +44,7 @@ function loadDemoPosters() {
         {
             id: 1,
             title: "ग्राफिक डिजाइन 1",
-            image: "images/poster1.jpg",  // ← यहाँ अपना path डालो
+            image: "images/graphic-design/poster1.jpg",  // ← यहाँ अपना path डालो
             likes: 45000,
             category: "graphic"
         },
@@ -517,6 +517,7 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
 
 
 
